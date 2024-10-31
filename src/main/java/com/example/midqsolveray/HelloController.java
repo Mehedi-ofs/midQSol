@@ -82,6 +82,9 @@ public class HelloController {
                 alert.setTitle(" If 'HasScholarship'checkbos is checked there must be number how much");
                 alert.showAndWait();
             }
+            else{
+                scholarship=Integer.parseInt(showinfoTF.getText());
+            }
 
         }
         else {
@@ -105,7 +108,8 @@ public class HelloController {
         int scholarshipAmount = totalAmount*tempStud.getScholarshipRate()/100;
         int payable = totalAmount-scholarshipAmount;
 
-        output = "total credit: "+totalcredit + " Total payable amount: "+ payable + "tk\n";
+        output += "total credit: "+totalcredit + " Total payable amount: "+ payable + "tk\n";
+        System.out.println(output);
         showinfoTF.setText(output);
     }
 
