@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.midqsolveray.HelloController">
+   <children>
+      <Label layoutX="23.0" layoutY="30.0" text="Enter Id" />
+      <Label layoutX="27.0" layoutY="101.0" text="Scholarship" />
+      <Label layoutX="228.0" layoutY="30.0" text="Select Course" />
+      <Label layoutX="232.0" layoutY="65.0" text="Credit" />
+      <Label layoutX="232.0" layoutY="96.0" text="Section" />
+      <Button layoutX="481.0" layoutY="70.0" mnemonicParsing="false" onAction="#addARegisteredCourseButtonOnClick" text="Add" />
+      <Button layoutX="530.0" layoutY="61.0" mnemonicParsing="false" onAction="#proceedToRegisterAndShowRegInfoButtonOnClick" text="Save" />
+      <TextField fx:id="idTF" layoutX="27.0" layoutY="48.0" prefHeight="26.0" prefWidth="162.0" />
+      <TextField fx:id="scholarshipTF" layoutX="94.0" layoutY="100.0" prefHeight="26.0" prefWidth="94.0" />
+      <TextField fx:id="creditTF" layoutX="310.0" layoutY="58.0" prefHeight="26.0" prefWidth="118.0" />
+      <CheckBox fx:id="scholarshipCheckBOx" layoutX="28.0" layoutY="79.0" mnemonicParsing="false" text="Has Scholarship" />
+      <ComboBox fx:id="sectionCB" layoutX="310.0" layoutY="91.0" prefHeight="26.0" prefWidth="118.0" />
+      <TextField fx:id="showinfoTF" layoutX="22.0" layoutY="155.0" prefHeight="127.0" prefWidth="555.0" />
+      <ComboBox fx:id="courseCB" layoutX="313.0" layoutY="26.0" prefHeight="26.0" prefWidth="118.0" />
+      <Line endX="-35.999969482421875" endY="4.4000091552734375" layoutX="228.0" layoutY="126.0" startX="-35.999969482421875" startY="-113.19999694824219" />
+      <Line endX="-42.600006103515625" endY="7.9999847412109375" layoutX="481.0" layoutY="131.0" startX="-42.600006103515625" startY="-131.0" />
+      <Label layoutX="30.0" layoutY="131.0" text="Show Information" />
+      <Label layoutX="24.0" layoutY="289.0" text="Course Type" />
+      <Label layoutX="24.0" layoutY="313.0" text="Section" />
+      <RadioButton fx:id="theoryRB" layoutX="108.0" layoutY="289.0" mnemonicParsing="false" text="Theory" />
+      <RadioButton fx:id="labRB" layoutX="177.0" layoutY="289.0" mnemonicParsing="false" text="Lab" />
+      <ComboBox fx:id="filtersectionCB" layoutX="77.0" layoutY="309.0" prefWidth="150.0" />
+      <Button layoutX="25.0" layoutY="342.0" mnemonicParsing="false" onAction="#showtoatalNoOfCourseButtonOnClick" prefHeight="26.0" prefWidth="201.0" text="Filter" />
+      <TextField layoutX="283.0" layoutY="294.0" prefHeight="71.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>
